@@ -964,21 +964,21 @@
 <a name='org.pitest.mutationtest.report.html.SourceFile@4c18516_59'/>
 59
 </td>
-<td class='survived'>
+<td class='killed'>
 <span class='pop'>
 <a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4c18516_59'>3</a>
 <span>
 
-1. fibbonacci : negated conditional &rarr; SURVIVED<br/>
+1. fibbonacci : negated conditional &rarr; KILLED<br/>
 
-2. fibbonacci : negated conditional &rarr; SURVIVED<br/>
+2. fibbonacci : negated conditional &rarr; KILLED<br/>
 
 3. fibbonacci : replaced return of integer sized value with (x == 0 ? 1 : 0) &rarr; KILLED<br/>
 
 </span>
 </span>
 </td>
-<td class='covered'><pre><span  class='survived'>        if (i == 0 || i == 1) return i;</span></pre></td></tr>
+<td class='covered'><pre><span  class='killed'>        if (i == 0 || i == 1) return i;</span></pre></td></tr>
 
 
 <tr>
@@ -1140,21 +1140,21 @@
 <a name='org.pitest.mutationtest.report.html.SourceFile@4c18516_69'/>
 69
 </td>
-<td class='survived'>
+<td class='killed'>
 <span class='pop'>
 <a href='#grouporg.pitest.mutationtest.report.html.SourceFile@4c18516_69'>3</a>
 <span>
 
-1. findLCM : Replaced integer division with multiplication &rarr; SURVIVED<br/>
+1. findLCM : Replaced integer multiplication with division &rarr; KILLED<br/>
 
-2. findLCM : Replaced integer multiplication with division &rarr; KILLED<br/>
+2. findLCM : Replaced integer division with multiplication &rarr; KILLED<br/>
 
 3. findLCM : replaced return of integer sized value with (x == 0 ? 1 : 0) &rarr; KILLED<br/>
 
 </span>
 </span>
 </td>
-<td class='covered'><pre><span  class='survived'>        return a*b/findGCD(a,b);</span></pre></td></tr>
+<td class='covered'><pre><span  class='killed'>        return a*b/findGCD(a,b);</span></pre></td></tr>
 
 
 <tr>
@@ -1547,7 +1547,7 @@
 
 <a name='grouporg.pitest.mutationtest.report.html.SourceFile@4c18516_59'/> 
 
-<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>fibbonacci<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; SURVIVED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>fibbonacci<br/><b>Killed by : </b>none</span></span> negated conditional &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>fibbonacci<br/><b>Killed by : </b>calculator.CalculatorTest.calculator.CalculatorTest</span></span> replaced return of integer sized value with (x == 0 ? 1 : 0) &rarr; KILLED</p> 
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>fibbonacci<br/><b>Killed by : </b>calculator.CalculatorTest.calculator.CalculatorTest</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>fibbonacci<br/><b>Killed by : </b>calculator.CalculatorTest.calculator.CalculatorTest</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>fibbonacci<br/><b>Killed by : </b>calculator.CalculatorTest.calculator.CalculatorTest</span></span> replaced return of integer sized value with (x == 0 ? 1 : 0) &rarr; KILLED</p> 
 </td>
 </tr>
 
@@ -1591,7 +1591,7 @@
 
 <a name='grouporg.pitest.mutationtest.report.html.SourceFile@4c18516_69'/> 
 
-<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>findLCM<br/><b>Killed by : </b>calculator.CalculatorTest.calculator.CalculatorTest</span></span> Replaced integer multiplication with division &rarr; KILLED</p> <p class='SURVIVED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>findLCM<br/><b>Killed by : </b>none</span></span> Replaced integer division with multiplication &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>findLCM<br/><b>Killed by : </b>calculator.CalculatorTest.calculator.CalculatorTest</span></span> replaced return of integer sized value with (x == 0 ? 1 : 0) &rarr; KILLED</p> 
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>findLCM<br/><b>Killed by : </b>calculator.CalculatorTest.calculator.CalculatorTest</span></span> Replaced integer multiplication with division &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>findLCM<br/><b>Killed by : </b>calculator.CalculatorTest.calculator.CalculatorTest</span></span> Replaced integer division with multiplication &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>findLCM<br/><b>Killed by : </b>calculator.CalculatorTest.calculator.CalculatorTest</span></span> replaced return of integer sized value with (x == 0 ? 1 : 0) &rarr; KILLED</p> 
 </td>
 </tr>
 
@@ -1685,7 +1685,7 @@
 
 <h2>Tests examined</h2>
 <ul>
-<li>calculator.CalculatorTest.calculator.CalculatorTest (67 ms)</li>
+<li>calculator.CalculatorTest.calculator.CalculatorTest (63 ms)</li>
 </ul>
 
 <br/>

@@ -71,11 +71,16 @@ public class CalculatorTest {
     @Test
     public void testFactorial() {
         Assert.assertEquals(120, calculator.factorial(5));
+        Assert.assertEquals(1, calculator.factorial(0)); // Dodany test dla wartości 0
+        Assert.assertEquals(1, calculator.factorial(1)); // Dodany test dla wartości 1
+        Assert.assertEquals(1, calculator.factorial(-1)); // Dodany test dla wartości ujemnej
     }
 
     @Test
-    public void testFibbonacci() {
+    public void testFibonacci() {
         Assert.assertEquals(5, calculator.fibbonacci(5));
+        Assert.assertEquals(0, calculator.fibbonacci(0)); // Dodany test dla wartości 0
+        Assert.assertEquals(1, calculator.fibbonacci(1)); // Dodany test dla wartości 1
     }
 
     @Test
@@ -85,8 +90,22 @@ public class CalculatorTest {
 
     @Test
     public void testFindLCM() {
+        // Normalny przypadek
         Assert.assertEquals(12, calculator.findLCM(3, 4));
+
+        // Test dla wartości 1
+        Assert.assertEquals(5, calculator.findLCM(1, 5));
+
+        // Test dla obu wartości równych
+        Assert.assertEquals(5, calculator.findLCM(5, 5));
+
+        // Test dla obu wartości równych 1
+        Assert.assertEquals(1, calculator.findLCM(1, 1));
     }
+
+
+
+
 
     @Test
     public void testIsPrime() {
