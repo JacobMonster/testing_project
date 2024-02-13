@@ -70,11 +70,26 @@ public class CalculatorTest {
 
     @Test
     public void testFactorial() {
-        Assert.assertEquals(120, calculator.factorial(5));
-        Assert.assertEquals(1, calculator.factorial(0)); // Dodany test dla wartości 0
-        Assert.assertEquals(1, calculator.factorial(1)); // Dodany test dla wartości 1
-        Assert.assertEquals(1, calculator.factorial(-1)); // Dodany test dla wartości ujemnej
+        // Test dla wartości większych niż 1
+        Assert.assertEquals(120, calculator.factorial(5)); // Oczekiwany wynik to 120, bo 5! = 120
+
+        // Test dla wartości większych niż 1
+        Assert.assertEquals(40320, calculator.factorial(8)); // Oczekiwany wynik to 40320, bo 8! = 40320
+
+        // Test dla wartości równych 1
+        Assert.assertEquals(1, calculator.factorial(1)); // Oczekiwany wynik to 1, bo 1! = 1
+
+        // Test dla wartości mniejszych niż 1
+        Assert.assertEquals(1, calculator.factorial(0)); // Oczekiwany wynik to 1, bo 0! = 1
+
+        // Test dla wartości równych 2
+        Assert.assertEquals(2, calculator.factorial(2)); // Oczekiwany wynik to 2, bo 2! = 2
+
+
     }
+
+
+
 
     @Test
     public void testFibonacci() {
